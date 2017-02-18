@@ -2,21 +2,26 @@ import java.util.ArrayList;
 
 public class Card{
 
-  private int cardNumber;
-  // private ArrayList<Integer> deck;
+  private String name;
+  private int value;
+ 
 
-public Card(int cardNumber){
-  this.cardNumber = cardNumber;
-  // this.deck = new ArrayList<Integer>();
-}
+  public Card(String name, int value){
+    this.name = name;
+    this.value = value;
+  }
 
-public int getCard(){
-  return this.cardNumber;
-}
+  public String getName(){
+    return this.name;
+  }
 
-// public int createDeck(){
-//   return this.deck;
-// }
+  public int getValue(){
+    return this.value;
+  }
+
+  public static ArrayList<Card> createDeck(){
+     return new ArrayList<Card>();
+  }
 
   
 }
