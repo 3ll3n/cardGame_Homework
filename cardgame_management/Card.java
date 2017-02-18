@@ -8,7 +8,7 @@ public class Card{
 
   private int card;
 
-public Card(int card, int value){
+public Card(int card){
   this.card = 1;
 }
 
