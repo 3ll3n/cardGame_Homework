@@ -28,11 +28,11 @@ public class CardTest{
     ArrayList<Card> deck = Card.createDeck();
     assertEquals(13, deck.size());
 
-    Card card1 = deck[0];
+    Card card1 = deck.get(0);
     assertEquals("ace", card1.getName());
     assertEquals(1, card1.getValue());
 
-    Card card2 = deck[1];
+    Card card2 = deck.get(1);
     assertEquals("two", card2.getName());
     assertEquals(2, card2.getValue());
   }
